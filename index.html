@@ -3,145 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>زما ویب پاڼه</title>
+    <title>شمس الله ویب پاڼه</title>
     <style>
-        /* عمومي سټایل */
+        /* اساسي سټایلونه */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            background-color: #f4f4f9;
             margin: 0;
             padding: 0;
-            direction: rtl;
-            text-align: right;
             color: #333;
+            text-align: right;
+            direction: rtl;
         }
 
-        /* د سر برخه */
+        /* سرلیک */
         header {
             background-color: #4CAF50;
-            color: white;
+            color: #fff;
             padding: 20px;
             text-align: center;
         }
 
         /* منو */
         nav {
+            display: flex;
+            justify-content: center;
             background-color: #333;
-            overflow: hidden;
         }
 
         nav a {
-            float: right;
-            display: block;
-            color: white;
             padding: 14px 20px;
+            color: white;
             text-decoration: none;
             text-align: center;
         }
 
         nav a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: #555;
         }
 
         /* اصلي منځپانګه */
-        section {
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
             padding: 20px;
-            margin: 15px;
-            background-color: white;
-            border-radius: 8px;
+            background-color: #fff;
+            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        /* د خدماتو برخه */
-        .service {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
+        /* برخې */
+        section {
+            margin-bottom: 20px;
         }
 
-        .service-item {
-            flex: 1 1 30%;
-            padding: 20px;
-            background-color: #e9f5e9;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .service-item h3 {
+        h2 {
             color: #4CAF50;
+            margin-bottom: 10px;
         }
 
         /* فوټر */
         footer {
-            background-color: #4CAF50;
+            background-color: #333;
             color: white;
             text-align: center;
             padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
 
-    <!-- د ویب پاڼې سر -->
+    <!-- سرلیک -->
     <header>
-        <h1>زما ویب پاڼه</h1>
-        <p>یو ځای چې تاسو زما په اړه ټول معلومات پیدا کولی شئ</p>
+        <h1>شمس الله ویب پاڼه</h1>
+        <p>د معلوماتو او خدماتو لپاره یو ځای</p>
     </header>
 
     <!-- منو -->
     <nav>
-        <a href="#contact">تماس</a>
-        <a href="#projects">پروژې</a>
-        <a href="#services">خدمات</a>
-        <a href="#about">زما په اړه</a>
         <a href="#home">کور</a>
+        <a href="#about">زما په اړه</a>
+        <a href="#services">خدمات</a>
+        <a href="#projects">پروژې</a>
+        <a href="#blog">بلاګ</a>
+        <a href="#contact">تماس</a>
     </nav>
 
     <!-- اصلي منځپانګه -->
-    <section id="home">
-        <h2>کور</h2>
-        <p>ښه راغلاست! زه خوشحاله یم چې تاسو زما ویب پاڼې ته راغلي یاست.</p>
-    </section>
+    <div class="container">
 
-    <section id="about">
-        <h2>زما په اړه</h2>
-        <p>زه شمس الله یم، د ټیکنالوژۍ او ویب پرمختګ په برخه کې ځانګړی علاقه لرم. زه د ویب ډیزاین، اپلیکیشن پراختیا او مشورتي خدماتو په برخه کې تجربه لرم. زما موخه دا ده چې د خپلو مهارتونو په وسیله خلکو ته مرسته وکړم او د دوی ژوند اسانه کړم.</p>
-    </section>
+        <!-- کور -->
+        <section id="home">
+            <h2>کور</h2>
+            <p>ښه راغلاست! زه خوشحاله یم چې تاسو زما ویب پاڼې ته راغلي یاست. دا پاڼه تاسو ته زما د خدماتو، پروژو، او معلوماتو په اړه خبر درکوي.</p>
+        </section>
 
-    <section id="services">
-        <h2>خدمات</h2>
-        <div class="service">
-            <div class="service-item">
-                <h3>ویب ډیزاین</h3>
-                <p>زه د ساده او ښکلي ویب ډیزاین په برخه کې ځانګړی مهارت لرم او کولی شم ستاسو لپاره ښه پاڼې جوړې کړم.</p>
-            </div>
-            <div class="service-item">
-                <h3>اپلیکیشن پراختیا</h3>
-                <p>زه د موبایل او ویب اپلیکیشن جوړونې تجربه لرم او کولی شم ستاسو اړتیاوې پوره کړم.</p>
-            </div>
-            <div class="service-item">
-                <h3>مشورتي خدمات</h3>
-                <p>که تاسو په ټیکنالوژۍ کې مشورې ته اړتیا لرئ، زه ستاسو سره د همکارۍ لپاره چمتو یم.</p>
-            </div>
-        </div>
-    </section>
+        <!-- زما په اړه -->
+        <section id="about">
+            <h2>زما په اړه</h2>
+            <p>زه شمس الله یم، یو ځوان، پرمخ تلونکی شخصیت چې د ټیکنالوژۍ، موبایل ایپلیکیشن جوړونې، او اقتصاد په برخو کې ځانګړې علاقه لرم. زه هڅه کوم چې د خپلو مهارتونو له لارې خلکو ته د ژوند په مختلفو برخو کې مرسته وکړم.</p>
+        </section>
 
-    <section id="projects">
-        <h2>پروژې</h2>
-        <p>ما څو پروژې ترسره کړي دي چې په کې د ویب او موبایل اپلیکیشن پراختیا شامل دي. دلته زما یو څو مهمې پروژې ښودل شوي دي.</p>
-        <ul>
-            <li>پروژه ۱: د ای کامرس ویب پاڼه</li>
-            <li>پروژه ۲: د تعلیمي اپلیکیشن پراختیا</li>
-            <li>پروژه ۳: د شخصي ویب پاڼه جوړول</li>
-        </ul>
-    </section>
+        <!-- خدمات -->
+        <section id="services">
+            <h2>خدمات</h2>
+            <ul>
+                <li>ویب ډیزاین: ستاسو د اړتیاوو سره سم ښکلي او کاري ویب پاڼې جوړول.</li>
+                <li>موبایل اپلیکیشن جوړونه: ستاسو سوداګرۍ لپاره پرمختللي اپلیکیشنونه جوړول.</li>
+                <li>مشورتي خدمات: د ټیکنالوژۍ او اقتصاد په برخو کې مشورې ورکول.</li>
+            </ul>
+        </section>
 
-    <section id="contact">
-        <h2>تماس</h2>
-        <p>تاسو کولی شئ زما سره په ایمیل یا د اړیکې د فورمې له لارې اړیکه ونیسئ:</p>
-        <p>ایمیل: example@example.com</p>
-    </section>
+        <!-- پروژې -->
+        <section id="projects">
+            <h2>پروژې</h2>
+            <p>دلته زما ځینې پروژې دي چې په مختلفو برخو کې یې ترسره کړي دي:</p>
+            <ul>
+                <li>د ویب ډیزاین پروژه - د کاروبار لپاره عصري ویب پاڼه</li>
+                <li>موبایل اپلیکیشن - د زده کوونکو لپاره تعلیمي اپلیکیشن</li>
+                <li>اقتصادي څېړنه - د بازار څېړنه او د پلور ستراتیژۍ</li>
+            </ul>
+        </section>
+
+        <!-- بلاګ -->
+        <section id="blog">
+            <h2>بلاګ</h2>
+            <p>دلته به زما ځینې بلاګونه وي چې د ټیکنالوژۍ، اقتصاد، او د ژوند په اړه دي:</p>
+            <ul>
+                <li><a href="#">د ټیکنالوژۍ پرمختګ او د ژوند اغېزې</a></li>
+                <li><a href="#">اقتصادي ستراتیژۍ - راتلونکې پرمختیا</a></li>
+                <li><a href="#">د بریالیتوب رازونه او لارښوونې</a></li>
+            </ul>
+        </section>
+
+        <!-- تماس -->
+        <section id="contact">
+            <h2>تماس</h2>
+            <p>تاسو کولی شئ زما سره په لاندې ایمیل یا د اړیکې فورم له لارې اړیکه ونیسئ:</p>
+            <p>ایمیل: example@example.com</p>
+            <form>
+                <label for="name">نوم:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">ایمیل:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">پیغام:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                <button type="submit">لیږل</button>
+            </form>
+        </section>
+
+    </div>
 
     <!-- فوټر -->
     <footer>
