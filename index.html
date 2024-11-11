@@ -44,12 +44,31 @@
             margin-top: 20px;
             color: #2c3e50;
         }
-        .about, .contact {
+        .about, .contact, .form-section {
             background-color: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             margin-bottom: 30px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #16a085;
         }
         .footer {
             text-align: center;
@@ -71,20 +90,19 @@
     <a href="#about">زما په اړه</a>
     <a href="#education">زده کړې</a>
     <a href="#contact">تماس</a>
+    <a href="#message">پیغام واستوئ</a>
 </nav>
 
 <div class="container">
 
     <section id="about" class="about">
         <h2 class="section-title">زما په اړه</h2>
-        <p>سلام! زه شمس الله یم. د خپل هیواد او خلکو د پرمختګ لپاره هڅې کوم. زه د ټیکنالوژۍ، موبایل ایپلیکیشن جوړونې، او اقتصاد په برخو کې ځانګړی علاقه لرم. زه هڅه کوم چې د خپلو مهارتونو له لارې خلکو ته د ژوند په مختلفو برخو کې مرسته وکړم.</p>
-        <p>زما اراده دا ده چې خپل پوهه او مهارتونه د خلکو په خدمت کې واچوم. زه غواړم چې د ټیکنالوژۍ له لارې نوي فرصتونه رامنځته کړم او د خلکو ژوند ښه کړم. ددې لپاره، زه په مختلفو پروژو کار کوم او غواړي چې خپلې تجربې له نورو سره شریکې کړم.</p>
+        <p>سلام! زه شمس الله یم. د خپل هیواد او خلکو د پرمختګ لپاره هڅې کوم. زه د ټیکنالوژۍ، موبایل ایپلیکیشن جوړونې، او اقتصاد په برخو کې ځانګړی علاقه لرم.</p>
     </section>
 
     <section id="education" class="about">
         <h2 class="section-title">زده کړې</h2>
         <p>زه د دولسم ټولګي فارغ شوی یم او اوس مهال د اقتصاد پوهنځي محصل یم چې د مالي او بانکي چارو په برخه کې زده کړې کوم.</p>
-        <p>زما د ښوونځي نوم: مکتب نورالمشايخ دی. زه هڅه کوم چې خپل تحصیلي سفر ته دوام ورکړم او د خپل هیواد د اقتصادي پرمختګ لپاره خپلې هڅې زیاتې کړم.</p>
     </section>
 
     <section id="contact" class="contact">
@@ -92,6 +110,22 @@
         <p>تاسو کولی شئ زما سره د لاندې برېښنالیک او د اړیکې په فارم کې اړیکه ونیسئ:</p>
         <p>برېښنالیک: <a href="mailto:sobmanlalay@gmail.com">sobmanlalay@gmail.com</a></p>
         <p>د تليفون شمېره: 0779299057</p>
+    </section>
+
+    <section id="message" class="form-section">
+        <h2 class="section-title">پیغام واستوئ</h2>
+        <form action="mailto:sobmanlalay@gmail.com" method="post" enctype="text/plain">
+            <label for="name">نوم:</label>
+            <input type="text" id="name" name="name" required placeholder="خپل نوم ولیکئ">
+
+            <label for="email">برېښنالیک:</label>
+            <input type="email" id="email" name="email" required placeholder="خپل برېښنالیک ولیکئ">
+
+            <label for="message">پیغام:</label>
+            <textarea id="message" name="message" rows="4" required placeholder="خپل پیغام ولیکئ"></textarea>
+
+            <button type="submit">پیغام واستوئ</button>
+        </form>
     </section>
 
 </div>
