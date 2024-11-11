@@ -3,164 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شمس الله ویب پاڼه</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>شمس الله - شخصي ویب پاڼه</title>
     <style>
-        /* اساسي سټایلونه */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
             color: #333;
-            text-align: right;
-            direction: rtl;
         }
-
-        /* سرلیک */
         header {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
             text-align: center;
         }
-
-        /* منو */
         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
         }
-
         nav a {
-            padding: 14px 20px;
             color: white;
             text-decoration: none;
-            text-align: center;
+            padding: 10px 15px;
+            margin: 0 10px;
+            font-size: 18px;
         }
-
         nav a:hover {
-            background-color: #555;
+            background-color: #1abc9c;
         }
-
-        /* اصلي منځپانګه */
         .container {
-            max-width: 1000px;
-            margin: 20px auto;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
-        /* برخې */
-        section {
-            margin-bottom: 20px;
+        .section-title {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #2c3e50;
         }
-
-        h2 {
-            color: #4CAF50;
-            margin-bottom: 10px;
+        .about, .contact {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
         }
-
-        /* فوټر */
-        footer {
-            background-color: #333;
-            color: white;
+        .footer {
             text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            background-color: #34495e;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
-    <!-- سرلیک -->
-    <header>
-        <h1>شمس الله ویب پاڼه</h1>
-        <p>د معلوماتو او خدماتو لپاره یو ځای</p>
-    </header>
+<header>
+    <h1>شمس الله - شخصي ویب پاڼه</h1>
+    <p>د خپل ژوند او زده کړو سفر</p>
+</header>
 
-    <!-- منو -->
-    <nav>
-        <a href="#home">کور</a>
-        <a href="#about">زما په اړه</a>
-        <a href="#services">خدمات</a>
-        <a href="#projects">پروژې</a>
-        <a href="#blog">بلاګ</a>
-        <a href="#contact">تماس</a>
-    </nav>
+<nav>
+    <a href="#about">زما په اړه</a>
+    <a href="#education">زده کړې</a>
+    <a href="#contact">تماس</a>
+</nav>
 
-    <!-- اصلي منځپانګه -->
-    <div class="container">
+<div class="container">
 
-        <!-- کور -->
-        <section id="home">
-            <h2>کور</h2>
-            <p>ښه راغلاست! زه خوشحاله یم چې تاسو زما ویب پاڼې ته راغلي یاست. دا پاڼه تاسو ته زما د خدماتو، پروژو، او معلوماتو په اړه خبر درکوي.</p>
-        </section>
+    <section id="about" class="about">
+        <h2 class="section-title">زما په اړه</h2>
+        <p>سلام! زه شمس الله یم. د خپل هیواد او خلکو د پرمختګ لپاره هڅې کوم. زه د ټیکنالوژۍ، موبایل ایپلیکیشن جوړونې، او اقتصاد په برخو کې ځانګړی علاقه لرم. زه هڅه کوم چې د خپلو مهارتونو له لارې خلکو ته د ژوند په مختلفو برخو کې مرسته وکړم.</p>
+        <p>زما اراده دا ده چې خپل پوهه او مهارتونه د خلکو په خدمت کې واچوم. زه غواړم چې د ټیکنالوژۍ له لارې نوي فرصتونه رامنځته کړم او د خلکو ژوند ښه کړم. ددې لپاره، زه په مختلفو پروژو کار کوم او غواړي چې خپلې تجربې له نورو سره شریکې کړم.</p>
+    </section>
 
-        <!-- زما په اړه -->
-        <section id="about">
-            <h2>زما په اړه</h2>
-            <p>زه شمس الله یم، یو ځوان، پرمخ تلونکی شخصیت چې د ټیکنالوژۍ، موبایل ایپلیکیشن جوړونې، او اقتصاد په برخو کې ځانګړې علاقه لرم. زه هڅه کوم چې د خپلو مهارتونو له لارې خلکو ته د ژوند په مختلفو برخو کې مرسته وکړم.</p>
-        </section>
+    <section id="education" class="about">
+        <h2 class="section-title">زده کړې</h2>
+        <p>زه د دولسم ټولګي فارغ شوی یم او اوس مهال د اقتصاد پوهنځي محصل یم چې د مالي او بانکي چارو په برخه کې زده کړې کوم.</p>
+        <p>زما د ښوونځي نوم: مکتب نورالمشايخ دی. زه هڅه کوم چې خپل تحصیلي سفر ته دوام ورکړم او د خپل هیواد د اقتصادي پرمختګ لپاره خپلې هڅې زیاتې کړم.</p>
+    </section>
 
-        <!-- خدمات -->
-        <section id="services">
-            <h2>خدمات</h2>
-            <ul>
-                <li>ویب ډیزاین: ستاسو د اړتیاوو سره سم ښکلي او کاري ویب پاڼې جوړول.</li>
-                <li>موبایل اپلیکیشن جوړونه: ستاسو سوداګرۍ لپاره پرمختللي اپلیکیشنونه جوړول.</li>
-                <li>مشورتي خدمات: د ټیکنالوژۍ او اقتصاد په برخو کې مشورې ورکول.</li>
-            </ul>
-        </section>
+    <section id="contact" class="contact">
+        <h2 class="section-title">تماس</h2>
+        <p>تاسو کولی شئ زما سره د لاندې برېښنالیک او د اړیکې په فارم کې اړیکه ونیسئ:</p>
+        <p>برېښنالیک: <a href="mailto:sobmanlalay@gmail.com">sobmanlalay@gmail.com</a></p>
+        <p>د تليفون شمېره: 0779299057</p>
+    </section>
 
-        <!-- پروژې -->
-        <section id="projects">
-            <h2>پروژې</h2>
-            <p>دلته زما ځینې پروژې دي چې په مختلفو برخو کې یې ترسره کړي دي:</p>
-            <ul>
-                <li>د ویب ډیزاین پروژه - د کاروبار لپاره عصري ویب پاڼه</li>
-                <li>موبایل اپلیکیشن - د زده کوونکو لپاره تعلیمي اپلیکیشن</li>
-                <li>اقتصادي څېړنه - د بازار څېړنه او د پلور ستراتیژۍ</li>
-            </ul>
-        </section>
+</div>
 
-        <!-- بلاګ -->
-        <section id="blog">
-            <h2>بلاګ</h2>
-            <p>دلته به زما ځینې بلاګونه وي چې د ټیکنالوژۍ، اقتصاد، او د ژوند په اړه دي:</p>
-            <ul>
-                <li><a href="#">د ټیکنالوژۍ پرمختګ او د ژوند اغېزې</a></li>
-                <li><a href="#">اقتصادي ستراتیژۍ - راتلونکې پرمختیا</a></li>
-                <li><a href="#">د بریالیتوب رازونه او لارښوونې</a></li>
-            </ul>
-        </section>
-
-        <!-- تماس -->
-        <section id="contact">
-            <h2>تماس</h2>
-            <p>تاسو کولی شئ زما سره په لاندې ایمیل یا د اړیکې فورم له لارې اړیکه ونیسئ:</p>
-            <p>ایمیل: example@example.com</p>
-            <form>
-                <label for="name">نوم:</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">ایمیل:</label><br>
-                <input type="email" id="email" name="email"><br>
-                <label for="message">پیغام:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
-                <button type="submit">لیږل</button>
-            </form>
-        </section>
-
-    </div>
-
-    <!-- فوټر -->
-    <footer>
-        <p>© 2024 شمس الله | ټول حقونه خوندي دي</p>
-    </footer>
+<footer class="footer">
+    <p>© 2024 شمس الله | ټول حقونه خوندي دي</p>
+</footer>
 
 </body>
 </html>
